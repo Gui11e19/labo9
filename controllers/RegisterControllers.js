@@ -1,4 +1,4 @@
-const Register = require("./../models/Register");
+const Register = require("./../models/registro");
 
 const insert = (req, res)=>{
     const student = new Register(req.body);
@@ -26,7 +26,7 @@ const getRegister = (req, ser)=>{
     });
 };
 
-const gtOneRegister = (req, res)=>{
+const getOneRegister = (req, res)=>{
 Register.findById(req.params.id,(error,documents)=>{
     if (error)
         return res.status(500).json({

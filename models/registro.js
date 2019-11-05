@@ -4,7 +4,7 @@ const RegisterSchema = Mongoose.Schema({
     carnet:String,
     schedule:String,
     tarde:Boolean,
-    date:date
+    date: Date
 });
 
 module.exports = Mongoose.model("Register", RegisterSchema);

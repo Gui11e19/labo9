@@ -2,7 +2,7 @@ const Mongoose = require("mongoose");
 
 const database = "RegisterDB", port="27017", host ="localhost";
 
-const uri = 'mongodb://${host}:${port}/${database}';
+const uri = `mongodb://${host}:${port}/${database}`;
 
 const connect = async ()=>{
     try{
